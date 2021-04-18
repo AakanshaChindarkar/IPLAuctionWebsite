@@ -19,8 +19,7 @@
 	auth.onAuthStateChanged(function(user){	
 		if(user){
 			var id = document.getElementById("franchiseid").value;
-			sessionStorage.clear();
-			sessionStorage.setItem("id", id);
+			localStorage.setItem("id", id);
 			document.location='FranchiseDashboard.html';
 		}
 		else{

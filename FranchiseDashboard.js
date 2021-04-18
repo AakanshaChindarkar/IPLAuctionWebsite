@@ -10,13 +10,8 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
     const auth = firebase.auth();
-	const signOut = document.querySelector('#signOut');
-	signOut.addEventListener('click', e => {
-	  e.preventDefault();
-	  auth.signOut();
-	  document.location='loginpage.html';
-	});
-	var id= sessionStorage.getItem("id");
+
+	var id= localStorage.getItem("id");
 	//alert(id);
 	 var database = firebase.database();
   function get() {
@@ -35,6 +30,13 @@
 		});
   }
   function loadAuction(){
-	sessionStorage.setItem("id", id);
+	localStorage.setItem("id", id);
 
   }
+  	const signOut = document.querySelector('#signOut');
+	signOut.addEventListener('click', e => {
+	  e.preventDefault();
+	  auth.signOut();
+	  localStorage.removeItem("id");
+	  document.location='loginpage.html';
+	});
