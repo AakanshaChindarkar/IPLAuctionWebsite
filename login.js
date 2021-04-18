@@ -20,6 +20,7 @@
 		if(user){
 			var id = document.getElementById("franchiseid").value;
 			sessionStorage.setItem("id", id);
+			alert(id);
 			document.location='FranchiseDashboard.html';
 		}
 		else{
