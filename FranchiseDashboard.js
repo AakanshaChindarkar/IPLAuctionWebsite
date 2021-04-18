@@ -11,7 +11,7 @@
   firebase.initializeApp(firebaseConfig);
     const auth = firebase.auth();
 
-	var id= localStorage.getItem("id");
+	var id= sessionStorage.getItem("id");
 	//alert(id);
 	 var database = firebase.database();
   function get() {
@@ -30,13 +30,13 @@
 		});
   }
   function loadAuction(){
-	localStorage.setItem("id", id);
+	sessionStorage.setItem("id", id);
 
   }
   	const signOut = document.querySelector('#signOut');
 	signOut.addEventListener('click', e => {
 	  e.preventDefault();
 	  auth.signOut();
-	  localStorage.removeItem("id");
+	  sessionStorage.removeItem("id");
 	  document.location='loginpage.html';
 	});
