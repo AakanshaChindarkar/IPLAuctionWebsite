@@ -14,7 +14,7 @@
   var database = firebase.database();
   var playerid=101;
   var biddingpersonsname;
-  var fid= localStorage.getItem("id");
+  var fid= sessionStorage.getItem("id");
   //alert(fid);
   function get() {
 	//var playerid = document.getElementById('playerid').value;
@@ -66,7 +66,7 @@
 	signOut.addEventListener('click', e => {
 	  e.preventDefault();
 	  auth.signOut();
-    localStorage.removeItem("id");
+    sessionStorage.removeItem("id");
 	  document.location='loginpage.html';
 	})
 	
