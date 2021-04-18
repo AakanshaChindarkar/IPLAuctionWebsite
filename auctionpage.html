@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Auction Page</title>
+	<link rel="stylesheet" href="auctionpage.css">
+  </head>
+  <body>
+   <div class="timerstyle">Next Player Auction in <span id="time"></span> minutes!
+   <button onClick="signOut()" id="signOut" class="signOut">SignOut</button>
+   </div>
+<div class="row">
+  <div class="column side">
+    <h3><input readonly type="text" class="playername" value="Player"/> </h3>
+	<img id="playerpic" width="200" />
+	<h3><input readonly type="text" id="PlayerName" class="playername"/></h3>
+  </div>
+  
+  <div class="column middle">
+	<label for="PlayerRole">Player Role :</label><input readonly  type="text" id="PlayerRole"/>
+	<label for="PlayerType">Player Type :</label><input readonly  type="text" id="PlayerType"/><br/>
+	<label for="BasePrice">Start Price :</label><input readonly  type="number" id="BasePrice"/><br/>
+    <label for="IPLMatches">IPL Matches Played Till Now :</label><input readonly  type="number" id="IPLMatches"/><br/>
+	<label for="IPL2020Teams">Played in IPL 2020 Team :</label><input readonly  type="text" id="IPL2020Teams"/><br/>
+	<label for="AuctionedPrice">Auctioned Price Till Now :</label><input readonly  type="number" id="AuctionedPrice"/><br/>
+	<label for="IPLTeams">IPL Teams Played Till Now :</label><input readonly  type="text" id="IPLTeams"/><br/>
+	<input type="hidden" id="playerid" name="playerid" value="101"/>
+	</br>
+	<div class="buttonsection">
+		<button id="addBid" onclick="addBid()"> Bid 1 lac</button>
+		<button id="pass" onclick="pass()"> Pass </button>
+		<button id="useRTM" onclick="useRTM()"> USE RTM CARD </button><br/><br/>
+		<label for="trackingbidding"><b>Live Bidding Track:</b></label> <br/><br/><textarea readonly id="trackingbidding"></textarea>
+	</div>
+  </div>
+    
+
+</div>
+    
+    
+	
+   </body>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+<script src="auctionpage.js"></script>
+</html>

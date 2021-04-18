@@ -1,0 +1,98 @@
+body{
+	text-align:left;
+	margin: 10px 10px 10px 10px;
+	padding: 23px 15px;
+	color:white;
+}
+body input{
+	text-decoration: none;
+	border: dashed 1px #000000;
+	margin-top: 5px;
+    margin-bottom:5px;
+	margin-left: 5px;
+	font-size: medium;
+	font-style: bold;
+}
+.signOut{
+	font-size: medium;
+	text-align: center;
+	background-color: #004BA0;
+	color: white;
+}
+
+.timerstyle{
+	text-align:left;
+	font-style: bold;
+	font-family: 'Georgia';
+	margin-top: 2px;
+	color: #004BA0;
+	font-size: large;
+}
+.timerstyle button{
+	float:right;
+	font-size: medium;
+}
+.playername{
+	font-size: larger;
+	text-align: center;
+	font-style: bold;
+	background-color: #004BA0;
+	color: white;
+}
+.playerpic{
+	width: 200px;
+	height: 1000px;
+}
+span{
+	color: crimson;
+	font-style: bold;
+	font-family: 'Impact';
+}
+.buttonsection button{
+	font-size: medium;
+	text-align: center;
+	background-color:white ;
+	color:  #004BA0;
+
+}
+.buttonsection button:hover{
+	font-size: medium;
+	text-align: center;
+	background-color:crimson ;
+	color: white;
+	font-style: bold;
+}
+.buttonsection:disabled {
+    color:rgb(150, 150, 150);
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+  height:65%;
+}
+.column.middle textarea{
+  	width:100%;
+	height:180px;
+	resize: none;
+  
+}
+
+/* Middle column */
+.column.middle {
+  width: 65%;
+  margin-top:30px;
+  height:100%;
+  background-color: #004BA0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

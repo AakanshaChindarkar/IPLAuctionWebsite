@@ -1,0 +1,237 @@
+body{
+	text-align:center;
+    color:#004BA0;
+    font-style: bold;
+}
+
+* {
+    box-sizing: border-box;
+  }
+body label,input{
+    margin-top: 10px;
+	text-align:center;
+    font-style: bold;
+}
+body label{
+    font-size: 20px;
+    margin-left: 20px;
+}
+body input{
+	text-decoration: none;
+	border: dashed 1px #000000;
+    color:#004BA0;
+    font-style: bold;
+}
+
+.franchisename{
+	font-size: large;
+    padding: 23px 15px;
+	text-align: center;
+    font-style: bold;
+    font-family: 'Segoe UI Black';
+}
+h2 span{
+	color: crimson;
+	font-style: bold;
+	font-family: 'Impact';
+}
+.signOut{
+	font-size: medium;
+	text-align: center;
+    float: right;
+	background-color: #004BA0;
+	color: white;
+}
+img{
+	width:400px;
+	height:150px;
+}
+table{
+	border: #D1AB3E solid 1px;
+	float: center;
+	text-align: center;
+	padding: 10px;
+	margin-left:100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width:80%;
+    background-color: #004BA0;
+    color: white;
+}
+table td{ 
+    float: center;
+    border: #D1AB3E solid 1px;
+	text-align: center;
+	padding: 5px;
+    width:50%;
+}
+table tr{
+    float: center;
+    border: #D1AB3E solid 1px;
+	text-align: center;
+	padding: 10px;
+	margin:10px;
+    width:50%;
+}
+h3{
+    text-align: center; 
+    background-color: #004BA0;
+    color:white;
+    font-size:30px;
+    font-style: bold,underline;
+}
+body{ 
+    text-align: center; 
+    background: #ffffff; 
+  font-family: sans-serif; 
+  font-weight: 100; 
+} 
+h1{ 
+  color: #004BA0;; 
+  font-weight: 100; 
+  font-size: 30px; 
+  margin: 20px 0px 10px; 
+} 
+ #timer{ 
+    font-family: sans-serif; 
+    color: #fff; 
+    display: inline-block; 
+    font-weight: 100; 
+    text-align: center; 
+    font-size: 10px; 
+} 
+#timer > div{ 
+    padding: 5px; 
+    border-radius: 3px; 
+    background: #004BA0;
+    display: inline-block; 
+} 
+#timer div > span{ 
+    padding: 5px; 
+    color: #004BA0;
+    font-style: bold;
+    font-size: medium;
+    border-radius: 3px; 
+    background: #f3f3f3; 
+    display: inline-block; 
+} 
+smalltext{ 
+    padding-top: 5px; 
+    font-size: 20px; 
+} 
+span{
+    color: #004BA0;
+    font-style: bold;
+    font-size: 25px;
+}
+footer{
+    background-color: #004BA0;
+    color: #fff;
+    height: 50px;
+    text-align: left;
+    width: 100%;
+    text-decoration: none;
+  }
+  .footer-left{
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+    display: block;
+    text-align: center;
+    padding :0 0 0 0;	
+    line-height: 25px;
+    text-decoration: none;
+  }
+  .footer-left h4{
+    float: left;
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+    line-height: 25px;
+    color: white;
+  }
+  .footer-right{
+    float: left;
+    text-decoration: none;
+  }
+  .footer-right a{
+    float: left;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: block;
+    color:#fdfdfd;
+    font-style: bold;
+    font-size:large;
+    transition: all 0.5s;
+    padding :0 0 0 0;	
+    line-height: 25px;
+    
+  }
+  .footer-right a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .footer-right{
+    float: left;
+  }
+  .footer-right a{
+    float: left;
+    padding: 15px 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: block;
+    color:#fdfdfd;
+    font-style: bold;
+    font-size:large;
+  }
+  .footer-right a:hover{
+    background-color:rgb(255, 255, 255);
+    color:#000000b0;
+  }
+  .fa {
+    margin-right: 5px;
+  }
+  span.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+  }
+  .firstup{
+      background-color:#004BA0;
+      padding: 13px 15px;
+      margin-top: 20px;
+      font-style: bold;
+  }
+  .middlepart input{
+    background-color:#004BA0;
+    color:white;
+    font-size: 15px;
+
+    padding: 3px 5px;
+  }
+  .websitelogo{
+      background-color: #004BA0;
+      float: left;
+      width:100px ;
+      height: 30px;
+  }
+  .glow {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #004BA0, 0 0 20px #004BA0, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #004BA0, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white, 0 0 80px white;
+    }
+  }
